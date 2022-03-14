@@ -37,4 +37,14 @@
         app:layout_constrainedWidth="true"
         app:layout_constraintHorizontal_bias="0.0"
         tools:text="ayo this is a placeholder for the tweet" />
+
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="TextView"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
