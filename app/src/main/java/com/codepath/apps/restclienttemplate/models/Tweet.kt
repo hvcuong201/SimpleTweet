@@ -1,15 +1,14 @@
 package com.codepath.apps.restclienttemplate.models
 
+import android.os.Parcelable
 import com.codepath.apps.restclienttemplate.TimeFormatter
 import org.json.JSONArray
 import org.json.JSONObject
+import kotlinx.parcelize.Parcelize
 
-class Tweet {
-
-    var id: Long = 0
-    var body: String = ""
-    var createdAt: String = ""
-    var user: User? = null
+@Parcelize
+class Tweet(var id: Long = 0, var body: String = "", var createdAt: String = "", var user: User? = null):
+    Parcelable {
 
     companion object {
         fun fromJson(jsonObject: JSONObject): Tweet {
